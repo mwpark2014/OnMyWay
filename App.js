@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import LocationSection from './views/home/components/location/LocationSection';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Select Location
-      </Text>
+      <LocationSection style={styles.alignCenter} />
       <Text>Favorites
       </Text>
       <Text>Recents
@@ -18,7 +18,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'space-evenly',
+    margin: 20,
   },
+  alignCenter: {
+    alignSelf: 'center',
+  }
 });
